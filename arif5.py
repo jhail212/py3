@@ -56,7 +56,7 @@ ki3MID = ki3.profile.mid
 ki4MID = ki4.profile.mid
 
 Bots = [arifMID,kiMID,ki2MID,ki3MID,ki4MID]
-creator = ["u65224f4e8812136f01b25275a54b5aef","u92e4326146a0bf296ca15846aa2a25f6"]
+creator = ["u65224f4e8812136f01b25275a54b5aef","u65224f4e8812136f01b25275a54b5aef"]
 Owner = ["u65224f4e8812136f01b25275a54b5aef"]
 admin = ["u65224f4e8812136f01b25275a54b5aef"]
 
@@ -139,7 +139,7 @@ def sendMessageWithMention(to, mid):
         
 def helpmessage():
     helpMessage = "╭───────────────────" + "\n" + \
-                  "│✒♠✳▪ ARIF_MH▪✳♠" + "\n" + \
+                  "│✒♠✳▪ Jhail & Vitaв❍тs🔘▪✳♠" + "\n" + \
                   "│" + "\n" + \
                   "│✒──✪〔 Help Message 〕✪──" + "\n" + \
                   "│" + "\n" + \
@@ -199,7 +199,7 @@ def helpmessage():
                   "│▪➤GroupMemberList" + "\n" + \
                   "│▪➤GroupInfo" + "\n" + \
                   "│▪➤Kill「Mention」" + "\n" + \
-                  "│▪➤KickAllMember"+ "\n" + \
+                  "│▪➤Jhail Geboy (kickall)"+ "\n" + \
                   "│" + "\n" + \
                   "│✒✪〔 Special 〕✪───────" + "\n" + \
                   "│▪➤Mimic「On/Off」" + "\n" + \
@@ -237,7 +237,7 @@ def helpmessage():
                   "│▪➤JoinAll" + "\n" + \
                   "│▪➤ByeAll" + "\n" + \
                   "│" + "\n" + \
-                  "╰─〔 Credits By: ©arifistifik™  〕"
+                  "╰─〔 Credits By: ©Agoest Jhail™  〕"
     return helpMessage
     
 def helptexttospeech():
@@ -689,10 +689,10 @@ def lineBot(op):
                             arif.sendMessage(msg.to,"The Ownerlist is empty")
                         else:
                             arif.sendMessage(msg.to,"Tunggu...")
-                            mc = "╭───────────────\n│✒♠✳▪ ARIF_MH▪✳♠\n│✒──✪〔 Owner List 〕✪───\n"
+                            mc = "╭───────────────\n│✒♠✳▪ Jhail & Vita в❍тs🔘▪✳♠\n│✒──✪〔 Owner List 〕✪───\n"
                             for mi_d in admin:
                                 mc += "│✒✪ " +arif.getContact(mi_d).displayName + "\n"
-                            arif.sendMessage(msg.to,mc + "│✒───────────────\n│✒✪〔 line.me/ti/p/~arifistifik 〕\n╰───────────────")
+                            arif.sendMessage(msg.to,mc + "│✒───────────────\n│✒✪〔 line.me/ti/p/~jhail_id 〕\n╰───────────────")
 #-------------------------------------------------------------------------------
                 elif msg.text.lower().startswith("adminadd "):
                     if msg._from in Owner:
@@ -740,7 +740,7 @@ def lineBot(op):
                             arif.sendMessage(msg.to,"The Adminlist is empty")
                         else:
                             arif.sendMessage(msg.to,"Tunggu...")
-                            mc = "╭───────────────\n│✒♠✳▪ ARIF_MH▪✳♠\n│✒──✪〔 Admin List 〕✪───\n"
+                            mc = "╭───────────────\n│✒♠✳▪ Jhail в❍тs🔘▪✳♠\n│✒──✪〔 Admin List 〕✪───\n"
                             for mi_d in admin:
                                 mc += "│✒✪ " +arif.getContact(mi_d).displayName + "\n"
                             arif.sendMessage(msg.to,mc + "│✒───────────────\n│✒✪〔 line.me/ti/p/~arifistifik 〕\n╰───────────────")
@@ -1281,8 +1281,8 @@ def lineBot(op):
                 elif text.lower() == 'kickallmember':
                     if msg._from in Owner:
                         if msg.toType == 2:
-                            print ("[ 19 ] KICK ALL MEMBER")
-                            _name = msg.text.replace("kickallmember","")
+                            print ("[ 19 ] Jhail Geboy")
+                            _name = msg.text.replace("jhail geboy","")
                             gs = arif.getGroup(msg.to)
                             gs = ki.getGroup(msg.to)
                             gs = ki2.getGroup(msg.to)
